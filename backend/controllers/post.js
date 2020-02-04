@@ -88,3 +88,7 @@ exports.getPost = (req, res, next) => {
         }
     })
  }
+ exports.sendData = (req, res, next) => {
+    res.status(200).json({message:'welcome'})
+ }
+ 
