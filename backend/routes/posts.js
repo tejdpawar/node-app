@@ -9,7 +9,6 @@ router.post('',checkAuth, extractFiles, postsController.createPost)
 router.put('/:id', checkAuth, extractFiles, postsController.updatePost)
 router.get('', postsController.getPosts)
 router.get('/:id', postsController.getPost)
-router.get('/tp', postsController.sendData)
 router.delete('/:id',checkAuth, postsController.deletePost)
 
  module.exports = router;

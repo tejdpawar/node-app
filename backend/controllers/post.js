@@ -62,7 +62,8 @@ exports.getPosts = (req, res, next) => {
     res.json({
         message: 'posts fetched successfully!',
         posts: fetchedPost,
-        maxPosts: count
+        maxPosts: count,
+        newmessage:'just for testing purpose'
     });
    })
 }
@@ -87,8 +88,5 @@ exports.getPost = (req, res, next) => {
             res.status(401).json({message:'not authorized'})
         }
     })
- }
- exports.sendData = (req, res, next) => {
-    res.status(200).json({message:'welcome'})
  }
  
